@@ -1,5 +1,6 @@
 package com.neu.edu;
 
-public class Individual {
+public class Individual 
+{
 
 }
