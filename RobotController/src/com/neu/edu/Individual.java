@@ -1,10 +1,5 @@
 package com.neu.edu;
 
-<<<<<<< HEAD
-public class Individual 
-{
-
-=======
 public class Individual {
 	private int[] chromosome;
 	private double fitness = -1;
@@ -55,5 +50,4 @@ public class Individual {
 		}
 		return output;
 	}
->>>>>>> 9037eedc72701c3ac85043dffeb8b0af8cf15e03
 }
