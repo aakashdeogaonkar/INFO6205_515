@@ -1,4 +1,4 @@
-package com.neu.edu;
+package src.com.neu.edu;
 
 public class GeneticAlgorithm {
 	

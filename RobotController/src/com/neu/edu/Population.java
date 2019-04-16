@@ -1,9 +1,9 @@
-package com.neu.edu;
+package src.com.neu.edu;
 import java.util.Arrays;
 import java.util.Comparator;
-import com.neu.edu.*;
+import java.util.Random;
 
-import chapter3.Individual;
+import src.com.neu.edu.*;
 
 public class Population {
 	private Individual population[];

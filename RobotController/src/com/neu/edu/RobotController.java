@@ -1,9 +1,9 @@
-package com.neu.edu;
+package src.com.neu.edu;
 
-import com.neu.edu.Maze;
+import src.com.neu.edu.Maze;
 
-import com.neu.edu.GeneticAlgorithm;
-import com.neu.edu.Population;
+import src.com.neu.edu.GeneticAlgorithm;
+import src.com.neu.edu.Population;
 
 public class RobotController 
 {
