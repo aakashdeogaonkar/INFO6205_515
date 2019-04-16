@@ -1,4 +1,11 @@
 package com.neu.edu;
+
+public class GeneticAlgorithm {
+	
+	private int populationSize;
+	private double mutationRate;
+	private double crossoverRate;
+	private int elitismCount;
 	
 	protected int tournamentSize;
 	
