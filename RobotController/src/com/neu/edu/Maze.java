@@ -13,19 +13,14 @@ public class Maze {
 
 	
 	public int[] getStartPosition() {
-		// Check we already found start position
 		if (this.startPosition[0] != -1 && this.startPosition[1] != -1) {
 			return this.startPosition;
 		}
 
-		// Default return value
 		int startPosition[] = { 0, 0 };
 
-		// Loop over rows
 		for (int rowIndex = 0; rowIndex < this.maze.length; rowIndex++) {
-			// Loop over columns
 			for (int colIndex = 0; colIndex < this.maze[rowIndex].length; colIndex++) {
-				// 2 is the type for start position
 				if (this.maze[rowIndex][colIndex] == 2) {
 					this.startPosition = new int[] { colIndex, rowIndex };
 					return new int[] { colIndex, rowIndex };
@@ -59,13 +54,10 @@ public class Maze {
 		int score = 0;
 		boolean visited[][] = new boolean[this.getMaxY() + 1][this.getMaxX() + 1];
 
-		// Loop over route and score each move
 		for (Object routeStep : route) {
 			int step[] = (int[]) routeStep;
 			if (this.maze[step[1]][step[0]] == 3 && visited[step[1]][step[0]] == false) {
-				// Increase score for correct move
 				score++;
-				// Remove reward
 				visited[step[1]][step[0]] = true;
 			}
 		}
