@@ -1,33 +1,8 @@
 package com.neu.edu;
-
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Random;
-
 import com.neu.edu.*;
 
-public class Population {
-	
-	private Individual population[];
-	private double populationFitness = -1;
-
-	public Population(int populationSize) {
-		this.population = new Individual[populationSize];
-	}
-	
-	public Population(int populationSize, int chromosomeLength) {
-		this.population = new Individual[populationSize];
-
-		for (int individualCount = 0; individualCount < populationSize; individualCount++) {
-			Individual individual = new Individual(chromosomeLength);
-			this.population[individualCount] = individual;
-		}
-		
-	}
-	
-	public Individual[] getPopulation() {
-		return population;
-	}
 
 	public Individual[] getIndividuals() {
 		return this.population;
@@ -55,6 +30,8 @@ public class Population {
 	public double getPopulationFitness() {
 		return this.populationFitness;
 	}
+=======
+>>>>>>> dec60efa55c3dcac6020a83aa7d7ed94cab07d93
 	
 	public int size() {
 		return this.population.length;
