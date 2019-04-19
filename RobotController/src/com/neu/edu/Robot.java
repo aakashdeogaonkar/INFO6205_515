@@ -6,7 +6,15 @@ public class Robot {
 	private enum Direction {NORTH, EAST, SOUTH, WEST};
 	 
     private int xPosition;
-    private int yPosition;
+    public int getyPosition() {
+		return yPosition;
+	}
+
+	public void setyPosition(int yPosition) {
+		this.yPosition = yPosition;
+	}
+
+	private int yPosition;
     private Direction heading;
     int maxMoves;
     int moves;
@@ -216,7 +224,15 @@ public class Robot {
         return new int[]{this.xPosition, this.yPosition};
     }
     
-    private Direction getHeading(){
+    public int getxPosition() {
+		return xPosition;
+	}
+
+	public void setxPosition(int xPosition) {
+		this.xPosition = xPosition;
+	}
+
+	private Direction getHeading(){
         return this.heading;
     }
     
@@ -233,4 +249,5 @@ public class Robot {
         }
         return route;
     }
+
 }
